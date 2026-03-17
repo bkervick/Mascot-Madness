@@ -15,7 +15,7 @@ body { background: #0a0f1e; color: #fff; font-family: 'Segoe UI', Arial, sans-se
 .bracket-wrapper { padding:14px 8px 40px; min-width:1946px; }
 .round-col { display:flex; flex-direction:column; justify-content:space-around; flex-shrink:0; width:210px; }
 .round-col.r64 { justify-content:space-between; }
-.matchup { background:#111827; border:1px solid #1e3a5f; border-radius:7px; overflow:hidden; flex-shrink:0; }
+.matchup { background:#111827; border:1px solid #1e3a5f; border-radius:7px; overflow:hidden; flex-shrink:0; width:210px; }
 .matchup:hover { border-color:#2563eb; }
 .team-slot { display:flex; align-items:center; gap:6px; padding:4px 6px; cursor:pointer; transition:background 0.15s; min-height:54px; }
 .team-slot:hover { background:rgba(37,99,235,0.2); }
