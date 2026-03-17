@@ -652,17 +652,17 @@ async function exportImage() {
   btn.textContent = '⏳ Exporting...';
   try {
     const wrapper = document.body;
-    const canvas = await html2canvas(wrapper, {
+    const canvas = await html2canvas(document.body, {
       backgroundColor: '#0f172a',
       scale: 2,
       useCORS: true,
       allowTaint: true,
-      scrollX: 0,
-      scrollY: 0,
-      width: wrapper.scrollWidth,
-      height: wrapper.scrollHeight,
-      windowWidth: wrapper.scrollWidth,
-      windowHeight: wrapper.scrollHeight
+      scrollX: -window.scrollX,
+      scrollY: -window.scrollY,
+      width: document.body.scrollWidth,
+      height: document.documentElement.scrollHeight,
+      windowWidth: document.body.scrollWidth,
+      windowHeight: document.documentElement.scrollHeight
     });
     const link = document.createElement('a');
     link.download = '2026_NCAA_Mascot_Bracket.png';
