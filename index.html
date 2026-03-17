@@ -414,7 +414,7 @@ function champDisplay() {
 function col(games, isR64) {
   const cls = isR64 ? 'r64' : '';
   const items = games.map(g => `<div style="flex-shrink:0">${g}</div>`).join('');
-  return `<div class="round-col ${cls}" style="height:900px">${items}</div>`;
+  return `<div class="round-col ${cls}">${items}</div>`;
 }
 
 function rlabel(text, color) {
