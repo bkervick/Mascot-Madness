@@ -46,7 +46,7 @@ header {
   padding: 18px 10px 14px;
   background: linear-gradient(160deg, #0d1b3e 0%, #1a237e 45%, #0d47a1 100%);
   border-bottom: 3px solid #f9a825;
-  min-width: 2000px;
+  min-width: 2060px;
   position: relative;
   overflow: hidden;
 }
