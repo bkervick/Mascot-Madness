@@ -446,15 +446,19 @@ function render() {
   const h = (text, color, w) => `<div style="width:${w}px;flex-shrink:0;text-align:center;font-size:0.57em;color:${color};letter-spacing:1px;text-transform:uppercase">${text}</div>`;
 
 const centerCol = `
-    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;
-                width:${CW}px;flex-shrink:0;gap:8px;height:1808px">
+    <div style="display:flex;flex-direction:column;align-items:center;
+                width:${CW}px;flex-shrink:0;gap:8px;height:1836px">
+      <div style="flex:1"></div>
       <div class="clabel">Final Four</div>
       ${box('FF_ES', false, false)}
-      <div class="clabel" style="margin-top:40px" >Championship</div>
+      <div style="height:30px"></div>
+      <div class="clabel">Championship</div>
       ${box('CHAMP', false, false)}
       ${champDisplay()}
+      <div style="height:30px"></div>
       <div class="clabel">Final Four</div>
       ${box('FF_MW', false, false)}
+      <div style="flex:1"></div>
     </div>`;
 
   root.innerHTML = `
