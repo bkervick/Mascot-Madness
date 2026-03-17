@@ -426,11 +426,11 @@ function render() {
 
   const GAP = 8; // single source of truth for column gap
 
-  function regCols(reg, reversed) {
+function regCols(reg, reversed) {
     const r64 = R64[reg].map(g => box(g.id, false, false));
-    const r32 = R32[reg].map(id => box(id, false, reversed));
-    const s16 = S16[reg].map(id => box(id, false, reversed));
-    const e8  = box(E8[reg], false, reversed);
+    const r32 = R32[reg].map(id => box(id, false, false));
+    const s16 = S16[reg].map(id => box(id, false, false));
+    const e8  = box(E8[reg], false, false);
     return { r64: col(r64, true), r32: col(r32), s16: col(s16), e8 };
   }
 
