@@ -479,12 +479,12 @@ function render() {
 
       <!-- LEFT SIDE -->
       <div style="display:flex;flex-direction:column;gap:${GAP}px">
-        <div style="display:flex;gap:${GAP}px;align-items:stretch;height:900px">
-        <div class="rtag" style="color:${eastColor};transform:rotate(180deg)">EAST</div>
+        <div style="display:flex;gap:${GAP}px;align-items:flex-end">
+          <div class="rtag" style="color:${eastColor};transform:rotate(180deg)">EAST</div>
           ${E.r64}${E.r32}${E.s16}
           <div style="width:${W}px;flex-shrink:0">${E.e8}</div>
         </div>
-        <div style="display:flex;gap:${GAP}px;align-items:stretch;height:900px">
+        <div style="display:flex;gap:${GAP}px;align-items:flex-start">
           <div class="rtag" style="color:${southColor};transform:rotate(180deg)">SOUTH</div>
           ${S.r64}${S.r32}${S.s16}
           <div style="width:${W}px;flex-shrink:0">${S.e8}</div>
