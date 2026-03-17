@@ -418,7 +418,7 @@ function col(games, isR64) {
 }
 
 function rlabel(text, color) {
-  return `<div class="rlabel" style="width:180px;color:${color}">${text}</div>`;
+  return `<div class="rlabel" style="width:210px;color:${color}">${text}</div>`;
 }
 
 function render() {
@@ -472,13 +472,13 @@ function render() {
       <!-- Left side: rtag + 3 cols + e8 -->
       <div style="display:flex;gap:4px;flex-shrink:0">
         <div style="width:20px;flex-shrink:0"></div>
-        ${h('R64',eastColor,180)}${h('R32',eastColor,180)}${h('Sweet 16',eastColor,180)}${h('Elite Eight',eastColor,180)}
+        ${h('R64',eastColor,210)}${h('R32',eastColor,210)}${h('Sweet 16',eastColor,210)}${h('Elite Eight',eastColor,210)}
       </div>
       <!-- Center -->
       ${h('Final Four / Championship',centerColor,170)}
       <!-- Right side: e8 + 3 cols + rtag -->
       <div style="display:flex;gap:4px;flex-shrink:0">
-        ${h('Elite Eight',midColor,180)}${h('Sweet 16',midColor,180)}${h('R32',midColor,180)}${h('R64',midColor,180)}
+        ${h('Elite Eight',midColor,210)}${h('Sweet 16',midColor,210)}${h('R32',midColor,210)}${h('R64',midColor,210)}
         <div style="width:20px;flex-shrink:0"></div>
       </div>
     </div>
