@@ -1,10 +1,10 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: #0a0f1e; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; overflow-x: auto; }
-.controls { display:flex; justify-content:center; gap:12px; padding:8px; background:#111827; min-width:2020px; }
+.controls { display:flex; justify-content:center; gap:12px; padding:8px; background:#111827; min-width:2060px; }
 .controls button { background:#1565c0; color:#fff; border:none; padding:6px 16px; border-radius:20px; cursor:pointer; font-size:0.82em; }
 .controls button:hover { background:#1976d2; }
 .controls button.reset { background:#b71c1c; }
-.submit-bar { display:flex; align-items:center; justify-content:center; gap:12px; padding:10px 16px; background:#0d1b2e; border-top:1px solid #1e3a5f; flex-wrap:wrap; min-width:2020px; }
+.submit-bar { display:flex; align-items:center; justify-content:center; gap:12px; padding:10px 16px; background:#0d1b2e; border-top:1px solid #1e3a5f; flex-wrap:wrap; min-width:2060px; }
 .submit-bar input { background:#1e3a5f; border:1px solid #2563eb; color:#fff; padding:7px 14px; border-radius:20px; font-size:0.88em; outline:none; width:220px; }
 .submit-bar input::placeholder { color:#6b7280; }
 .submit-bar input:focus { border-color:#60a5fa; }
@@ -12,7 +12,7 @@ body { background: #0a0f1e; color: #fff; font-family: 'Segoe UI', Arial, sans-se
 .submit-btn:hover { background:#15803d; }
 .submit-btn:disabled { background:#374151; cursor:not-allowed; }
 .submit-status { font-size:0.82em; color:#9ca3af; min-width:200px; }
-.bracket-wrapper { padding:14px 8px 40px; min-width:2020px; }
+.bracket-wrapper { padding:14px 8px 40px; min-width:2060px; }
 .round-col { display:flex; flex-direction:column; justify-content:space-around; flex-shrink:0; width:210px; }
 .round-col.r64 { justify-content:space-between; }
 .matchup { background:#111827; border:1px solid #1e3a5f; border-radius:7px; overflow:hidden; flex-shrink:0; width:210px; }
