@@ -41,3 +41,60 @@ body { background: #0a0f1e; color: #fff; font-family: 'Segoe UI', Arial, sans-se
 .ff-title { text-align:center; color:#f9a825; font-size:0.78em; letter-spacing:2px; text-transform:uppercase; margin-bottom:8px; }
 .ff-games { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-bottom:14px; }
 .ff-rlabel { text-align:center; font-size:0.55em; color:#f9a825; padding:3px 2px 1px; letter-spacing:1px; text-transform:uppercase; }
+header {
+  text-align: center;
+  padding: 18px 10px 14px;
+  background: linear-gradient(160deg, #0d1b3e 0%, #1a237e 45%, #0d47a1 100%);
+  border-bottom: 3px solid #f9a825;
+  min-width: 1706px;
+  position: relative;
+  overflow: hidden;
+}
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 60px,
+    rgba(255,255,255,0.015) 60px,
+    rgba(255,255,255,0.015) 61px
+  );
+  pointer-events: none;
+}
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #f9a825, #fff176, #f9a825);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+  margin-bottom: 4px;
+}
+header .subtitle {
+  color: #90caf9;
+  font-size: 0.78em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+header .year-badge {
+  display: inline-block;
+  background: rgba(249,168,37,0.15);
+  border: 1px solid rgba(249,168,37,0.4);
+  color: #f9a825;
+  font-size: 0.65em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 2px 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+@keyframes shimmer {
+  to { background-position: 200% center; }
+}
