@@ -411,10 +411,10 @@ function champDisplay() {
   </div>`;
 }
 
-function col(games, isR64) {
+function col(games, isR64, height=914) {
   const cls = isR64 ? 'r64' : '';
   const items = games.map(g => `<div style="flex-shrink:0">${g}</div>`).join('');
-  return `<div class="round-col ${cls}">${items}</div>`;
+  return `<div class="round-col ${cls}" style="height:${height}px">${items}</div>`;
 }
 
 function rlabel(text, color) {
